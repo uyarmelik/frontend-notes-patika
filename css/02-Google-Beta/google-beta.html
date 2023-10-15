@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <title>Google!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/google-favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div>
+        <img src="img/google-logo.jpg" width="351" height="113" alt="Google!">
+    </div>
+
+    <div class="center-table">
+        <table width="90%">
+            <tbody>
+                <tr>
+                    <td style="background-color: #EEEEEE;" colspan="3">
+                        <div>
+                            <p style="font-size: 16px; margin: 0;">Search the web using Google!</p>
+                            <input class="text-box" type="text" value="" size="40"><br>
+                            <input class="text-box" type="submit" value="Google Search">
+                            <input class="text-box" type="submit" value="I'm feeling lucky"><br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="padding-table" style="background-color: #7EE5DA;" width="37%">
+                        <div class="larger-text">Special Searches<br>
+                            <a class="larger-text" href="#">Stanford Search</a><br>
+                            <a class="larger-text" href="#">Linux Search</a><br>
+                        </div>
+                    </td>
+                    <td style="background-color: #70CCC2;">
+                        <div>
+                            <a href="#">Help!</a> <br>
+                            <a href="#">About Google!</a> <br>
+                            <a href="#">Company Info</a> <br>
+                            <a href="#">Google! Logos</a> <br>
+                        </div>
+                    </td>
+                    <td style="background-color:#62B3AA; text-align: right;">
+                        <div>
+                            <p style="margin: 0;">Get Google! </p>
+                            <p style="margin: 0;">updates monthly:</p>
+                            <input type="hidden" value="google-friends">
+                            <input class="text-box" type="text" value="your e-mail"> <br>
+                            <input class="text-box" type="submit" value="Subscribe">
+                            <a style="margin-left: 8px;" href="#">Archive</a>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <div style="margin-top: 15px;">
+        Copyright &copy; <span id="currentYear"></span> Google Inc.
+    </div>
+
+    <script>
+        var currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+    </script>
+
+</body>
+
+</html>

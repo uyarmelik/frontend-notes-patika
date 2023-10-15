@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Studio Signorella :: Serigrafia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/studio-signorella-favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <span id="screen-width" class="hidden-element"></span>
+    <span id="screen-height" class="hidden-element"></span>
+    <span id="screen-height-wide" class="hidden-element"></span>
+
+    <div style="margin: 19px 25px 19px;">
+
+        <nav class="nav-container">
+            <ul>
+                <li><a id="logo" href="the-work.html">Studio Signorella</a></li>
+                <li><a id="selected-page" href="the-work.html">The work.</a></li>
+                <li><a href="the-story.html">The story.</a></li>
+                <li><a href="say-hello.html">Say hello.</a></li>
+            </ul>
+        </nav>
+
+        <div class="cards">
+
+            <div class="card">
+                <a href="img/early-photo.jpg" target="_blank">
+                    <img alt="Early" src="img/early-photo.jpg">
+                    <h3>Early</h3>
+                </a>
+
+            </div>
+
+            <div class="card">
+                <a href="img/terrestrial-photo.jpg" target="_blank">
+                    <img alt="Terrestrials" src="img/terrestrial-photo.jpg">
+                    <h3>Terrestrials</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="img/pisces-photo.jpg" target="_blank">
+                    <img alt="Pisces" src="img/pisces-photo.jpg">
+                    <h3>Pisces</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="img/los-cangrejos-photo.jpg" target="_blank">
+                    <img alt="Los Cangrejos" src="img/los-cangrejos-photo.jpg">
+                    <h3>Los Cangrejos</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="img/yokai-photo.jpg" target="_blank">
+                    <img alt="Yokai" src="img/yokai-photo.jpg">
+                    <h3>Yokai</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="img/snow-crows-photo.jpg" target="_blank">
+                    <img alt="Snow Crows" src="img/snow-crows-photo.jpg">
+                    <h3>Snow Crows</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="img/conversation-photo.jpg" target="_blank">
+                    <img alt="Conversation" src="img/conversation-photo.jpg">
+                    <h3>Conversation</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="img/chinese-lunar-new-year-series-photo.jpg" target="_blank">
+                    <img alt="Chinese Lunar New Year Series" src="img/chinese-lunar-new-year-series-photo.jpg">
+                    <h3>Chinese Lunar New Year Series</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="img/experimental-photo.jpg" target="_blank">
+                    <img alt="Experimental" src="img/experimental-photo.jpg">
+                    <h3>Experimental</h3>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="img/former-life-photo.jpg" target="_blank">
+                    <img alt="Former Life" src="img/former-life-photo.jpg">
+                    <h3>Former Life</h3>
+                </a>
+            </div>
+
+            <div style="height: 100px; width: 100%;"></div>
+        </div>
+    </div>
+
+
+    <script>
+        function updateScreen() {
+            const screenWidth = window.innerWidth / 2;
+            document.getElementById('screen-width').textContent = screenWidth;
+            document.documentElement.style.setProperty('--screen-width', screenWidth + 'px');
+
+            const screenHeight = (screenWidth * 120) / 100;
+            document.getElementById('screen-height').textContent = screenHeight;
+            document.documentElement.style.setProperty('--screen-height', screenHeight + 'px');
+
+            const screenHeightWide = (screenWidth * 56) / 100;
+            document.getElementById('screen-height-wide').textContent = screenHeightWide;
+            document.documentElement.style.setProperty('--screen-height-wide', screenHeightWide + 'px');
+        }
+        window.addEventListener('load', updateScreen);
+        window.addEventListener('resize', updateScreen);
+    </script>
+</body>
+
+</html>
