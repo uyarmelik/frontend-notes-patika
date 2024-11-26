@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The story :: Serigrafia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="assets/img/studio-signorella-favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <span id="screen-width" class="hidden-element"></span>
+    <span id="screen-height" class="hidden-element"></span>
+    <span id="screen-height-wide" class="hidden-element"></span>
+
+    <div style="margin: 19px 25px 19px;">
+
+        <nav class="nav-container">
+            <ul>
+                <li><a id="logo" href="the-work.html">Studio Signorella</a></li>
+                <li><a href="the-work.html">The work.</a></li>
+                <li><a id="selected-page" href="the-story.html">The story.</a></li>
+                <li><a href="say-hello.html">Say hello.</a></li>
+            </ul>
+        </nav>
+
+        <div class="the-story-container">
+            <div>
+                <h3 class="the-story-header">The story.</h3>
+                <h4 class="the-story-text">I had a graphic design career for fifty years and am now in recovery from
+                    that
+                    career. I did some
+                    silk screen in college in the 1960s, a few prints in the 1980s and then nothing until 2019 when I
+                    built a set up for silk screen in the garden level of my design studio.<br><br>Although very small,
+                    the studio affords me the luxury of having every thing I need to silkscreen in one place. With the
+                    exception of outputting film, which is done by the fine folks at Anthem in San Francisco, I do
+                    everything by hand for each print.<br><br>The allure of silkscreen for me is the smooth and vibrant
+                    color along with the crisp delineation of form.</h4>
+            </div>
+            <img id="the-story-image" src="assets/img/studiosouthside2.jpg" alt="Studio Southside">
+        </div>
+
+        <img style="width: 100%; margin-top: 65px;" src="assets/img/corousel1.jpg" alt="Corousel 1">
+
+        <h3 class="the-process-header">The Process</h3>
+        <h4 class="the-process-text">Stencils are required to define the inking areas. To create the stencils I
+            use one of two techniques. I hand cut paper stencils or screens are coated with a photo emulsion,
+            exposed to UV light, then washed out with a high pressure water spray. One screen is needed for each color
+            to be printed.<br><br>Custom colors are mixed for each print, and tested beforehand on the edition
+            paper.<br><br>As each color is printed the sheets are hung up to dry for a day before going on to
+            the next color.<br><br>Although the process seems very mechanical, I’m finding there are always
+            printer’s gremlins that want to fool with the process so that adjustments are required on the fly. Little
+            victories when you can adjust for them, very disappointing when you can not.<br><br>With small
+            prints my loss rate is around 10%, with large format multicolor prints my loss rate is closer to 50%. Thus
+            the high cost of large multicolor prints.</h4>
+
+        <div style="height: 100px; width: 100%;"></div>
+
+    </div>
+
+    <script>
+        function updateScreen() {
+            const screenWidth = window.innerWidth / 2;
+            document.getElementById('screen-width').textContent = screenWidth;
+            document.documentElement.style.setProperty('--screen-width', screenWidth + 'px');
+
+            const screenHeight = window.innerHeight;
+            document.getElementById('screen-height').textContent = screenHeight;
+            document.documentElement.style.setProperty('--screen-height', screenHeight + 'px');
+        }
+        window.addEventListener('load', updateScreen);
+        window.addEventListener('resize', updateScreen);
+    </script>
+</body>
+
+</html>
